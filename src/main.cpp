@@ -1,21 +1,15 @@
 #include <SFML/Graphics.hpp>
+#include "../include/algorithms.hpp"
+#include "../include/grid.hpp"
+#include "../constants/constants.hpp"
+
+
+
 
 int main()
 {
-    auto window = sf::RenderWindow(sf::VideoMode({1920u, 1080u}), "CMake SFML Project");
-    window.setFramerateLimit(144);
-
-    while (window.isOpen())
-    {
-        while (const std::optional event = window.pollEvent())
-        {
-            if (event->is<sf::Event::Closed>())
-            {
-                window.close();
-            }
-        }
-
-        window.clear();
-        window.display();
-    }
+    sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "MAZE");
+    window.setFramerateLimit(60);
+    Grid grid(GRID_WIDTH, GRID_HEIGHT);
+    dfsMazeAnimation(grid, 0,0);
 }
