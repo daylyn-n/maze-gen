@@ -191,7 +191,4 @@ void dfsMazeAnimation(Grid& grid,int startX, int startY)
     }
 }
 
-void solver(Grid& grid, int startX, int startY)
-{
 
-}
