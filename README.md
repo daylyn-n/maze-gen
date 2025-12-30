@@ -7,6 +7,16 @@ Solver coming soon.
 ## Demo
 https://github.com/user-attachments/assets/e9b34d42-8460-4665-9da1-b5faaa438c7d
 
+## Project Structure
+```
+maze-gen/
+├─ CMakeLists.txt
+├─ README.md
+├─ include/          # headers
+├─ src/              # SFML app and maze generation code
+└─ build/            # CMake build output (generated)
+```
+
 ## Features
 - Recursive backtracking (DFS) maze generation
 - Real-time SFML visualization
@@ -51,3 +61,4 @@ cmake --build build
 
 ## License
 MIT
+
