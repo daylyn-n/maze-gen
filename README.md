@@ -43,7 +43,7 @@ cmake --build build
 ```
 
 ## Configuration
-- (Document CLI args or constants to change maze size/speed/colors)
+- constants to change maze size
 
 ## Troubleshooting
 - SFML link errors: ensure SFML 2.6.1 libs and headers are on your compiler/linker paths.
