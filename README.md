@@ -20,7 +20,6 @@ maze-gen/
 ## Features
 - Recursive backtracking (DFS) maze generation
 - Real-time SFML visualization
-- Configurable grid size and draw speed (if applicable)
 
 ## How It Works
 A recursive backtracking (DFS) algorithm carves passages between cells. When no unvisited neighbors remain (to avoid loops or borders), it backtracks to the last branch and continues. SFML renders the grid and carving steps.
